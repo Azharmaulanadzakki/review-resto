@@ -32,6 +32,7 @@ const onSubmit = async () => {
 };
 </script>
 
+
 <template>
   <main class="grid grid-cols-12 gap-4 min-h-screen">
     <section class="col-span-6 bg-white h-full shadow-xl">
