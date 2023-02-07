@@ -1,5 +1,5 @@
 <template>
-    <div class="w-[100%] xl:px-20 lg:px-12 sm:px-6 px-2 py-2  bg-black/90">
+    <div class="w-[100%] xl:px-20 lg:px-12 sm:px-3 px-2 py-2  bg-black/90">
         <div class="flex flex-col items-center justify-center">
             <div class="font-['Poppins'] text-white text-xl font-bold capitalize mt-2 antialiased tracking-wider">
                 Review Resto

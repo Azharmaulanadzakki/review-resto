@@ -1,14 +1,16 @@
 <script setup>
 
-import { RouterView } from "vue-router";
+import { RouterView, useRouter } from "vue-router";
 import Navbar from './components/Navbar.vue';
 import Footer from './components/Footer.vue';
+const router = useRouter()
 
 </script>
 
 <template>
-  <div class="box-border antialiased bg-gray-200">
-    <Navbar />
+  <div class="box-border antialiased">
+    <!-- <Navbar v-if="router.currentRoute.value.name !== 'about'" /> -->
+    <Navbar v-if="router.currentRoute.value.name !== 'login'"  />
     <RouterView /> 
     <Footer />
   </div>
