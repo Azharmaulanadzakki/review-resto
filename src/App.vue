@@ -9,7 +9,6 @@ const router = useRouter()
 
 <template>
   <div class="box-border antialiased">
-    <!-- <Navbar v-if="router.currentRoute.value.name !== 'about'" /> -->
     <Navbar v-if="router.currentRoute.value.name !== 'login'"  />
     <RouterView /> 
     <Footer />

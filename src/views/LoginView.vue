@@ -13,7 +13,7 @@ const credentials = reactive({
   device_name: "browser",
 });
 
-const isLoggingIn = ref(false);
+const isLoggingIn = ref(false); 
 const onSubmit = async () => {
   isLoggingIn.value = true;
 
@@ -21,8 +21,8 @@ const onSubmit = async () => {
     const { data } = await repository.login(credentials);
     if (data) {
       localStorage.setItem("access_token", data.access_token);
-      localStorage.setItem("user", data.user);
-      router.replace({ name: "home" });
+      localStorage.setItem("user", JSON.stringify(data.user));
+      router.replace({ name: "restos" });
     }
   } catch (e) {
     console.error(e);
@@ -36,7 +36,7 @@ const onSubmit = async () => {
 
 
 <template>
-  <main class="grid sm:grid-cols-2 md:grid-cols-8 lg:grid-cols-12 lg:grid-cols-12">
+  <main class="grid sm:grid-cols-2 md:grid-cols-8` lg:grid-cols-12">
     <section class="sm:col-span-4 relative">
       <form
         method="post"
@@ -83,7 +83,7 @@ const onSubmit = async () => {
           Repellendus, distinctio nihil totam et saepe alias, officia repudiandae perferendis doloribus accusamus temporibus.
       </p>
       <div class="bg-black">
-        <img src="https://i.pinimg.com/564x/41/5c/62/415c62827ae09a85279d849676560b5c.jpg" 
+        <img src="https://i.pinimg.com/564x/f2/07/11/f20711a0b619efdd1e48ac10eacd21e0.jpg" 
         class=" sm-h-32 max-h-screen w-full opacity-60" 
         alt="">
       </div>
