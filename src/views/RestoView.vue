@@ -32,7 +32,7 @@ const excerpt = (text, maxLenght = 10, indicator = "...") => {
   return textCopy;
 };
 </script>
-
+            
 <template>
   <BaseContainer>
     <div class="grid grid-cols-12 gap-4">

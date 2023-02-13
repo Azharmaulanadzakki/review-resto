@@ -51,20 +51,21 @@ onMounted(() => fetchReviews());
       Back
     </RouterLink>
 
-    <BaseCard class="mt-4 bg-red-600 text-white">
+    <BaseCard class="mt-6 bg-gradient-to-l from-blue-400 via-blue-800 to-gray-700 font-['Poppins'] tracking-wider
+    shadow-2xl text-white">
       <template #title>Resto</template>
     </BaseCard>
 
-    <BaseCard class="mt-4">
+    <BaseCard class="mt-6">
       <template #title>{{ resto.name }}</template>
       {{ resto.description }}
     </BaseCard>
 
-    <BaseCard class="mt-4 bg-red-600 text-white">
+    <BaseCard class="mt-6 bg-gradient-to-r from-blue-600 via-blue-800 to-gray-700 text-white shadow-2xl">
       <template #title>Reviews</template>
     </BaseCard>
 
-    <BaseCard v-for="review in reviews" :key="review.id" class="mt-4">
+    <BaseCard v-for="review in reviews" :key="review.id" class="mt-6">
       <template #title>{{ review.user.name }}</template>
       {{ review.text }}
     </BaseCard>
